@@ -8,14 +8,14 @@
     />
   </head>
   <body>
+    <div id="image">
+      <img
+        src="./assets/logo.png"
+        alt="Logo"
+        class="logo"
+      />
+    </div>
     <div id="page1">
-      <div class="image">
-        <img
-          src="./assets/logo.png"
-          alt="Logo"
-          class="logo"
-        />
-      </div>
       <!-- <h1>Research Study</h1> -->
       <p>
         Thank you for agreeing to participate in the Research Study. Your
@@ -53,13 +53,6 @@
       id="page2"
       style="display: none"
     >
-      <div class="image">
-        <img
-          src="./assets/logo.png"
-          alt="Logo"
-          class="logo"
-        />
-      </div>
       <!-- <h1>Research Study</h1> -->
       <p>
         You would also get descriptive questions to answer, please read the
@@ -92,13 +85,6 @@
       id="page3"
       style="display: none"
     >
-      <div class="image image3">
-        <img
-          src="./assets/logo.png"
-          alt="Logo"
-          class="logo page3"
-        />
-      </div>
       <!-- <h1>Research Study</h1> -->
       <form
         action="/submit"
@@ -243,6 +229,7 @@
     <script>
       const agreePage1Checkbox = document.getElementById('agreePage1')
       const proceedPage1Button = document.getElementById('proceedPage1')
+      const image = document.getElementById('image')
       const page1 = document.getElementById('page1')
       const page2 = document.getElementById('page2')
 
@@ -265,6 +252,7 @@
 
       proceedPage2Button.addEventListener('click', () => {
         page2.style.display = 'none'
+        image.classList.add('image3')
         page3.style.display = 'block'
       })
     </script>

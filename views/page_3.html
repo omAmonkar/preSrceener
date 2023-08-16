@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Study - Page 3</title>
+  </head>
+  <body>
+    <h1>Research Study</h1>
+    <form
+      action="/submit"
+      method="post"
+    >
+      <label for="gender">Q1 Please select your gender:</label><br />
+      <input
+        required
+        type="radio"
+        name="gender"
+        value="Male"
+      />
+      Male
+      <input
+        required
+        type="radio"
+        name="gender"
+        value="Female"
+      />
+      Female<br /><br />
+
+      <label for="day">Q2 What is the day today?</label><br />
+      <select name="day">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option></select
+      ><br /><br />
+
+      <label for="age">Q3 What is your age?</label><br />
+      <input
+        required
+        type="number"
+        name="age"
+        min="18"
+        max="99"
+      /><br /><br />
+
+      <label>Q4 Please select the odd one out:</label><br />
+      <input
+        required
+        type="radio"
+        name="oddOne"
+        value="Lion"
+      />
+      Lion
+      <input
+        required
+        type="radio"
+        name="oddOne"
+        value="Cat"
+      />
+      Cat
+      <input
+        required
+        type="radio"
+        name="oddOne"
+        value="Tiger"
+      />
+      Tiger
+      <input
+        required
+        type="radio"
+        name="oddOne"
+        value="AeroPlane"
+      />
+      Aeroplane<br /><br />
+
+      <label>Q5 How do you like taking online surveys?</label><br />
+      <textarea
+        name="surveyPreference"
+        rows="3"
+        cols="40"
+        maxlength="50"
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

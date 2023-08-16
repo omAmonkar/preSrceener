@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Study - Page 2</title>
+  </head>
+  <body>
+    <h1>Research Study</h1>
+    <p>
+      You would also get descriptive questions to answer, please read the
+      questions carefully before answering and input a meaningful response.
+      Gibberish or non-meaningful responses would be rejected in real time.
+    </p>
+    <label>
+      <input
+        type="checkbox"
+        id="agreePage2"
+      />
+      Sure, I will enter meaningful response in descriptive questions.
+    </label>
+    <button
+      id="proceedPage2"
+      disabled
+      onclick="location.href='page_3.html'"
+    >
+      Proceed
+    </button>
+
+    <script>
+      const agreePage2Checkbox = document.getElementById('agreePage2')
+      const proceedPage2Button = document.getElementById('proceedPage2')
+
+      agreePage2Checkbox.addEventListener('change', () => {
+        proceedPage2Button.disabled = !agreePage2Checkbox.checked
+      })
+    </script>
+  </body>
+</html>

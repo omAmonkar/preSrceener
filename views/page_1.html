@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Study</title>
+    <link
+      rel="stylesheet"
+      href="page_1.css"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Research Study</h1>
+      <p>
+        Thank you for agreeing to participate in the Research Study. Your
+        answers would be kept anonymous and will be used for Research Purpose
+        only.
+      </p>
+      <p>
+        We request you to be attentive and honest while sharing your opinion
+        throughout the survey, as there are quality check questions implemented
+        at different stages to filter inattentive responses.
+      </p>
+    </div>
+    <label>
+      <input
+        type="checkbox"
+        id="agreePage1"
+      />
+      Sure, I will Read every question carefully before proceeding.
+    </label>
+    <button
+      id="proceedPage1"
+      disabled
+      onclick="location.href='page_2.html'"
+    >
+      Proceed
+    </button>
+
+    <script>
+      const agreePage1Checkbox = document.getElementById('agreePage1')
+      const proceedPage1Button = document.getElementById('proceedPage1')
+
+      agreePage1Checkbox.addEventListener('change', () => {
+        proceedPage1Button.disabled = !agreePage1Checkbox.checked
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Study</title>
+    <link
+      rel="stylesheet"
+      href="page_new.css"
+    />
+  </head>
+  <body>
+    <div id="page1">
+      <div class="image">
+        <img
+          src="./assets/logo.png"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+      <!-- <h1>Research Study</h1> -->
+      <p>
+        Thank you for agreeing to participate in the Research Study. Your
+        answers would be kept anonymous and will be used for Research Purpose
+        only.
+      </p>
+      <p>
+        We request you to be attentive and honest while sharing your opinion
+        throughout the survey, as there are quality check questions implemented
+        at different stages to filter inattentive responses.
+      </p>
+      <br />
+      <br />
+      <div class="agree">
+        <input
+          type="checkbox"
+          id="agreePage1"
+        />
+        <label>
+          Sure, I will Read every question carefully before proceeding.
+        </label>
+      </div>
+      <br />
+      <div class="btn">
+        <button
+          id="proceedPage1"
+          disabled
+        >
+          Proceed
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="page2"
+      style="display: none"
+    >
+      <div class="image">
+        <img
+          src="./assets/logo.png"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+      <!-- <h1>Research Study</h1> -->
+      <p>
+        You would also get descriptive questions to answer, please read the
+        questions carefully before answering and input a meaningful response.
+        Gibberish or non-meaningful responses would be rejected in real time.
+      </p>
+      <br />
+      <br />
+      <div class="agree">
+        <input
+          type="checkbox"
+          id="agreePage2"
+        />
+        <label>
+          Sure, I will enter meaningful response in descriptive questions.
+        </label>
+      </div>
+      <br />
+      <div class="btn">
+        <button
+          id="proceedPage2"
+          disabled
+        >
+          Proceed
+        </button>
+      </div>
+    </div>
+
+    <div
+      id="page3"
+      style="display: none"
+    >
+      <div class="image image3">
+        <img
+          src="./assets/logo.png"
+          alt="Logo"
+          class="logo page3"
+        />
+      </div>
+      <!-- <h1>Research Study</h1> -->
+      <form
+        action="/submit"
+        method="post"
+      >
+        <div class="input">
+          <label for="gender">Q1 Please select your gender:</label><br />
+          <div class="input-div">
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="gender"
+                value="Male"
+              />
+              Male
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="gender"
+                value="Female"
+              />
+              Female
+            </div>
+          </div>
+        </div>
+
+        <div class="input">
+          <label>Q2 What is 3+6?</label><br />
+          <div class="input-div">
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="numericOdd"
+                value="7"
+              />
+              7
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="numericOdd"
+                value="9"
+              />
+              9
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="numericOdd"
+                value="36"
+              />
+              36
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="numericOdd"
+                value="5"
+              />
+              5
+            </div>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="age">Q3 What is your age?</label><br />
+          <input
+            required
+            type="number"
+            name="age"
+          />
+        </div>
+
+        <div class="input">
+          <label>Q4 Please select the odd one out:</label><br />
+          <div class="input-div">
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="oddOne"
+                value="Lion"
+              />
+              Lion
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="oddOne"
+                value="Cat"
+              />
+              Cat
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="oddOne"
+                value="Tiger"
+              />
+              Tiger
+            </div>
+            <div class="sub">
+              <input
+                required
+                type="radio"
+                name="oddOne"
+                value="AeroPlane"
+              />
+              Aeroplane
+            </div>
+          </div>
+        </div>
+
+        <div class="input">
+          <label>Q5 How do you like taking online surveys?</label><br />
+          <textarea
+            name="surveyPreference"
+            rows="5"
+            cols="40"
+            maxlength="50"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="btn-sub"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script>
+      const agreePage1Checkbox = document.getElementById('agreePage1')
+      const proceedPage1Button = document.getElementById('proceedPage1')
+      const page1 = document.getElementById('page1')
+      const page2 = document.getElementById('page2')
+
+      const agreePage2Checkbox = document.getElementById('agreePage2')
+      const proceedPage2Button = document.getElementById('proceedPage2')
+      const page3 = document.getElementById('page3')
+
+      agreePage1Checkbox.addEventListener('change', () => {
+        proceedPage1Button.disabled = !agreePage1Checkbox.checked
+      })
+
+      proceedPage1Button.addEventListener('click', () => {
+        page1.style.display = 'none'
+        page2.style.display = 'block'
+      })
+
+      agreePage2Checkbox.addEventListener('change', () => {
+        proceedPage2Button.disabled = !agreePage2Checkbox.checked
+      })
+
+      proceedPage2Button.addEventListener('click', () => {
+        page2.style.display = 'none'
+        page3.style.display = 'block'
+      })
+    </script>
+  </body>
+</html>

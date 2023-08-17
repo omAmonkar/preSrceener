@@ -37,6 +37,8 @@ app.post(
     const { gender, numericOdd, age, oddOne, surveyPreference } = req.body
     const isGibberish = gibberish.detect(surveyPreference)
 
+    console.log(oddOne)
+
     if (gender && numericOdd && age && oddOne && surveyPreference) {
       if (isGibberish) {
         res.status(400).json({

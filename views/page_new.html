@@ -17,15 +17,17 @@
     </div>
     <div id="page1">
       <!-- <h1>Research Study</h1> -->
-      <p>
+      <p align="justify">
         Thank you for agreeing to participate in the Research Study. Your
         answers would be kept anonymous and will be used for Research Purpose
         only.
       </p>
-      <p>
-        We request you to be attentive and honest while sharing your opinion
-        throughout the survey, as there are quality check questions implemented
-        at different stages to filter inattentive responses.
+      <p align="justify">
+        We request you to be <strong><u>attentive and honest</u></strong> while
+        sharing your opinion throughout the survey, as there are
+        <strong><u> quality check questions implemented</u></strong> at
+        different stages to <strong><u>filter inattentive responses</u></strong
+        >.
       </p>
       <br />
       <br />
@@ -34,7 +36,7 @@
           type="checkbox"
           id="agreePage1"
         />
-        <label>
+        <label for="agreePage1">
           Sure, I will Read every question carefully before proceeding.
         </label>
       </div>
@@ -54,10 +56,17 @@
       style="display: none"
     >
       <!-- <h1>Research Study</h1> -->
-      <p>
-        You would also get descriptive questions to answer, please read the
-        questions carefully before answering and input a meaningful response.
-        Gibberish or non-meaningful responses would be rejected in real time.
+      <p align="justify">
+        You would <strong>get descriptive questions to answer</strong>, please
+        read the questions carefully before answering and input a meaningful
+        response.
+      </p>
+
+      <p align="justify">
+        <strong
+          >Gibberish or non-meaningful responses would be rejected in real
+          time.</strong
+        >
       </p>
       <br />
       <br />
@@ -66,7 +75,7 @@
           type="checkbox"
           id="agreePage2"
         />
-        <label>
+        <label for="agreePage2">
           Sure, I will enter meaningful response in descriptive questions.
         </label>
       </div>
@@ -85,147 +94,171 @@
       id="page3"
       style="display: none"
     >
-      <!-- <h1>Research Study</h1> -->
       <form
         action="/submit"
         method="post"
       >
-        <div class="input">
-          <label for="gender">Q1 Please select your gender:</label><br />
-          <div class="input-div">
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="gender"
-                value="Male"
-              />
-              Male
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="gender"
-                value="Female"
-              />
-              Female
-            </div>
-          </div>
-        </div>
-
-        <div class="input">
-          <label>Q2 What is 3+6?</label><br />
-          <div class="input-div">
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="numericOdd"
-                value="7"
-              />
-              7
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="numericOdd"
-                value="9"
-              />
-              9
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="numericOdd"
-                value="36"
-              />
-              36
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="numericOdd"
-                value="5"
-              />
-              5
+        <div class="question-container">
+          <div
+            class="input question"
+            id="question1"
+          >
+            <label for="gender"> Please select your gender:</label><br />
+            <div class="input-div">
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="gender"
+                  value="Male"
+                />
+                Male
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="gender"
+                  value="Female"
+                />
+                Female
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="input">
-          <label for="age">Q3 What is your age?</label><br />
-          <input
-            required
-            type="number"
-            name="age"
-          />
-        </div>
-
-        <div class="input">
-          <label>Q4 Please select the odd one out:</label><br />
-          <div class="input-div">
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="oddOne"
-                value="Lion"
-              />
-              Lion
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="oddOne"
-                value="Cat"
-              />
-              Cat
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="oddOne"
-                value="Tiger"
-              />
-              Tiger
-            </div>
-            <div class="sub">
-              <input
-                required
-                type="radio"
-                name="oddOne"
-                value="AeroPlane"
-              />
-              Aeroplane
+          <div
+            class="input question"
+            id="question2"
+            style="display: none"
+          >
+            <label> What is 3+6?</label><br />
+            <div class="input-div">
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="numericOdd"
+                  value="7"
+                />
+                7
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="numericOdd"
+                  value="9"
+                />
+                9
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="numericOdd"
+                  value="36"
+                />
+                36
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="numericOdd"
+                  value="5"
+                />
+                5
+              </div>
             </div>
           </div>
+          <div
+            class="input question"
+            id="question3"
+            style="display: none"
+          >
+            <label for="age"> What is your age?</label><br />
+            <input
+              required
+              type="number"
+              name="age"
+            />
+          </div>
+          <div
+            class="input question"
+            id="question4"
+            style="display: none"
+          >
+            <label> Please select the odd one out:</label><br />
+            <div class="input-div">
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="oddOne"
+                  value="Lion"
+                />
+                Lion
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="oddOne"
+                  value="Cat"
+                />
+                Cat
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="oddOne"
+                  value="Tiger"
+                />
+                Tiger
+              </div>
+              <div class="sub">
+                <input
+                  required
+                  type="radio"
+                  name="oddOne"
+                  value="AeroPlane"
+                />
+                Aeroplane
+              </div>
+            </div>
+          </div>
+          <div
+            class="input question"
+            id="question5"
+            style="display: none"
+          >
+            <label> How do you like taking online surveys?</label><br />
+            <textarea
+              name="surveyPreference"
+              rows="5"
+              cols="40"
+              minlength="50"
+            ></textarea>
+          </div>
         </div>
-
-        <div class="input">
-          <label>Q5 How do you like taking online surveys?</label><br />
-          <textarea
-            name="surveyPreference"
-            rows="5"
-            cols="40"
-            minlength="50"
-          ></textarea>
+        <div class="btn">
+          <button
+            id="nextQuestion"
+            disabled
+          >
+            Next
+          </button>
+          <button
+            type="submit"
+            class="btn-sub"
+            id="submitButton"
+            style="display: none"
+          >
+            Submit
+          </button>
         </div>
-
-        <button
-          type="submit"
-          class="btn-sub"
-        >
-          Submit
-        </button>
       </form>
     </div>
-
     <script>
       const agreePage1Checkbox = document.getElementById('agreePage1')
       const proceedPage1Button = document.getElementById('proceedPage1')
@@ -255,6 +288,70 @@
         image.classList.add('image3')
         page3.style.display = 'block'
       })
+
+      const questionContainer = document.querySelector('.question-container')
+      const questions = questionContainer.querySelectorAll('.question')
+      const nextQuestionButton = document.getElementById('nextQuestion')
+      const submitButton = document.getElementById('submitButton')
+
+      let currentQuestionIndex = 0
+
+      function shuffleOptions(optionsContainer) {
+        const options = Array.from(optionsContainer.children)
+        for (let i = options.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1))
+          optionsContainer.appendChild(options[j])
+        }
+      }
+
+      function showQuestion(index) {
+        questions[currentQuestionIndex].style.display = 'none'
+        questions[index].style.display = 'block'
+        currentQuestionIndex = index
+
+        if (index === questions.length - 1) {
+          nextQuestionButton.style.display = 'none'
+          submitButton.style.display = 'block'
+        } else {
+          nextQuestionButton.style.display = 'block'
+          submitButton.style.display = 'none'
+        }
+
+        nextQuestionButton.disabled = true
+
+        if (index === 1 || index === 3) {
+          const questionOptionsContainer =
+            questions[index].querySelector('.input-div')
+          shuffleOptions(questionOptionsContainer)
+        }
+      }
+
+      function enableNextButton() {
+        nextQuestionButton.disabled = false
+      }
+
+      const radioInputs = questionContainer.querySelectorAll(
+        'input[type="radio"]'
+      )
+      const numberInput = document.querySelector('input[type="number"]')
+      const textarea = document.querySelector('textarea')
+
+      for (const input of radioInputs) {
+        input.addEventListener('change', enableNextButton)
+      }
+
+      numberInput.addEventListener('input', enableNextButton)
+
+      textarea.addEventListener('input', () => {
+        nextQuestionButton.disabled = textarea.value.length < 50
+      })
+
+      nextQuestionButton.addEventListener('click', () => {
+        const nextIndex = currentQuestionIndex + 1
+        showQuestion(nextIndex)
+      })
+
+      showQuestion(0)
     </script>
   </body>
 </html>

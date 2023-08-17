@@ -127,15 +127,21 @@ label{
 }
 
 .logo {
-  width: 150px;     
+  width: 150px;
+  position: absolute;
+  left:0;
+  top: 0;
 }
 
 .image3{
-  margin-top: 20rem;
+  position: absolute;
+  left:0;
+  top: 0;
 }
 
 #page3{
   text-align: left;
+  /* margin-top: 25rem; */
 }
 
 .sub{

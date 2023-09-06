@@ -102,6 +102,7 @@
           <div
             class="input question"
             id="question1"
+            data-check="0"
           >
             <label for="gender"> Please select your gender:</label><br />
             <div class="input-div">
@@ -129,6 +130,7 @@
             class="input question"
             id="question2"
             style="display: none"
+            data-check="0"
           >
             <label> What is 3+6?</label><br />
             <div class="input-div">
@@ -174,6 +176,7 @@
             class="input question"
             id="question3"
             style="display: none"
+            data-check="0"
           >
             <label for="age"> What is your age?</label><br />
             <input
@@ -186,6 +189,7 @@
             class="input question"
             id="question4"
             style="display: none"
+            data-check="0"
           >
             <label> Please select the odd one out:</label><br />
             <div class="input-div">
@@ -227,9 +231,264 @@
               </div>
             </div>
           </div>
+
+          <div
+            class="input question"
+            id="question6"
+            style="display: none"
+            data-check="1"
+          >
+            <label for="industry"
+              >Which of the following best describes the industry that you,
+              personally, work in?</label
+            ><br />
+            <div class="input-div">
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Advertising"
+                />
+                Advertising
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Banking/Financial"
+                />
+                Banking/Financial
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Chemicals/Plastics/Rubber"
+                />
+                Chemicals/Plastics/Rubber
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Communications/Information"
+                />
+                Communications/Information
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Construction"
+                />
+                Construction
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Consumer Electronics"
+                />
+                Consumer Electronics
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Consumer Packaged Goods"
+                />
+                Consumer Packaged Goods
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Education"
+                />
+                Education
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Food/Beverage"
+                />
+                Food/Beverage
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Information Technology/IT"
+                />
+                Information Technology/IT
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="Other"
+                />
+                Other
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="industry"
+                  value="I don't work"
+                />
+                I don't work
+              </div>
+            </div>
+          </div>
+          <div
+            class="input question"
+            id="question7"
+            style="display: none"
+            data-check="0"
+          >
+            <label for="jobTitle"
+              >What is your job title, level, or responsibility?</label
+            ><br />
+            <div class="input-div">
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="C-Level (e.g. CEO, CFO), Owner, Partner, President"
+                />
+                C-Level (e.g. CEO, CFO), Owner, Partner, President
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Vice President (EVP, SVP, AVP, VP)"
+                />
+                Vice President (EVP, SVP, AVP, VP)
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Director (Group Director, Sr. Director, Director)"
+                />
+                Director (Group Director, Sr. Director, Director)
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Manager (Group Manager, Sr. Manager, Manager, Program Manager)"
+                />
+                Manager (Group Manager, Sr. Manager, Manager, Program Manager)
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Analyst"
+                />
+                Analyst
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Administrative (Clerical or Support Staff)"
+                />
+                Administrative (Clerical or Support Staff)
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Intern"
+                />
+                Intern
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="Volunteer"
+                />
+                Volunteer
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="jobTitle"
+                  value="None of the above"
+                />
+                None of the above
+              </div>
+            </div>
+          </div>
+          <div
+            class="input question"
+            id="question8"
+            style="display: none"
+            data-check="0"
+          >
+            <label for="e_status"
+              >Which of the following describes your employment status? </label
+            ><br />
+            <div class="input-div">
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="e_status"
+                  value="FullTime"
+                />
+                Full-time (30 hours or more per week)
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="e_status"
+                  value="FullTime"
+                />
+                Part-time (less than 30 hours per week)
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="e_status"
+                  value="freelance"
+                />
+                Contract, freelance, or temporary
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="e_status"
+                  value="self"
+                />
+                Self-employed full time
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="e_status"
+                  value="retired"
+                />
+                Retired
+              </div>
+              <div class="sub">
+                <input
+                  type="radio"
+                  name="e_status"
+                  value="None of the above"
+                />
+                None of the above
+              </div>
+            </div>
+          </div>
           <div
             class="input question"
             id="question5"
+            data-check="0"
             style="display: none"
           >
             <label> How do you like taking online surveys?</label><br />
@@ -241,6 +500,7 @@
             ></textarea>
           </div>
         </div>
+
         <div class="btn">
           <button
             id="nextQuestion"
@@ -305,9 +565,30 @@
       }
 
       function showQuestion(index) {
-        questions[currentQuestionIndex].style.display = 'none'
-        questions[index].style.display = 'block'
-        currentQuestionIndex = index
+        // console.log(question8.getAttribute('data-check'))
+        // console.log(index)
+        // console.log(questions[index])
+
+        let extra = questions[index].getAttribute('data-check') ?? 0
+
+        // console.log(extra)
+
+        if (extra == 1) {
+          // questions[index].style.display = 'block'
+          // question8.style.display = 'none'
+          questions[currentQuestionIndex].style.display = 'none'
+          questions[index].style.display = 'none'
+          // questions[index + 1].style.display = 'block'
+          console.log('current index : ' + questions[index])
+          currentQuestionIndex = index + 1
+          showQuestion(index + 1)
+        } else {
+          console.log('index' + index)
+          console.log('quest: ' + questions[index])
+          questions[currentQuestionIndex].style.display = 'none'
+          questions[index].style.display = 'block'
+          currentQuestionIndex = index
+        }
 
         if (index === questions.length - 1) {
           nextQuestionButton.style.display = 'none'
@@ -347,6 +628,7 @@
       })
 
       nextQuestionButton.addEventListener('click', () => {
+        console.log(currentQuestionIndex)
         const nextIndex = currentQuestionIndex + 1
         showQuestion(nextIndex)
       })
